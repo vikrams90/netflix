@@ -122,6 +122,7 @@ body{
         text-align: left;
     }
     .c1btn{
+        margin: 10px;
         height: 50px;
         width: 180px;
         background-color: red;
@@ -135,17 +136,18 @@ body{
         flex-direction: row;
         flex-wrap: wrap;
         align-items: flex-start;
-        justify-content: flex-start;
+        justify-content: space-around;
         padding: 20px 20px;
     }
     .optn1, .optn2, .optn3, .optn4{
         display: flex;
+        margin: 10px;
         /* flex-wrap: wrap; */
         flex-direction: column;
         align-items: flex-start;
         border-radius: 8px;
         /* justify-content: space-between; */
-        width: 24%;
+        width: 320px;
         height: 400px;
         margin-left: 10px;
         padding: 15px 20px 60px 20px;
@@ -178,4 +180,44 @@ body{
     margin-top: 10px;
     text-align: left;
     font-size: 24px;
+}
+@media (max-width:768px) {
+    .content h1{
+        width: 80%;
+        font-size: 42px;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+    .container{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .box{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .content{
+        width: 100%;
+          margin-left: 0px;
+          padding: 0;
+    }
+    .container form button{
+        margin-top: 20px;
+    }
+    .optn1,.optn2,.optn3,.optn4{
+        margin-top: 10px;
+    }
+    .faq h2{
+        font-size: 42px;
+        text-align: center;
+    }
+    .faq button{
+        display: flex;
+        flex: wrap;
+        height: auto;
+    }
 }
